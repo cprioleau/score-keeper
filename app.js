@@ -4,16 +4,16 @@ $(document).ready(function () {
   var score = 0;
   $("#score").html(score + " " + "Points");
 
-  // click event on increase-5
+  // click event on increase by 5
   $("#increase-5").on("click", function()  {
     score = score + 5;
     $("#score").html(score + " " +"Points");
     console.log(score, "CURRENT SCORE");
   });
 
-  // click event on decrease-5
+  // click event on decrease by 5
   $("#decrease-5").on("click", function()  {
-    if ((score-5) > 0) {
+    if ((score-5) >= 0) {
       score = score - 5;
       $("#score").html(score + " " + "Points");
       console.log(score, "CURRENT SCORE");
